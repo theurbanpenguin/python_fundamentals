@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-email = 'tux@example.com'
+email = input("Enter an email address: ")
 at = email.find('@')
 user = email[:at]
 domain = email[at + 1:]
