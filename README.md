@@ -11,3 +11,5 @@ Scripts to help you work you way through my course
 > First Email Script: git checkout v2.0
 
 > Adding prompts to temperature and email: git checkout v3.0
+
+> Simple hard coded number guess: git checkout v4.0
