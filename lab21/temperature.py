@@ -1,13 +1,15 @@
-from sys import argv
+import sys
 import mymodule
-
-file = mymodule.basename(argv[0])
-message = file + ': Enter a temperature to convert as an integer: '
-
-if len(argv) > 1:
+file = mymodule.basename(sys.argv[0])
+message = file + ' : Enter a temp: '
+if len(sys.argv) > 1:
     try:
-        temp = int(argv[1])
+        temp = int(sys.argv[1])
     except ValueError:
-        temp = mymodule.prompt_for_int(message, argv[1])
-    finally:
-        print(mymodule.f_to_c(temp))
+        temp = mymodule.prompt_for_int(message,sys.argv[1])
+
+try:
+    print(mymodule.f_to_c(temp))
+except:
+    print("No valid input")
+    exit(99)

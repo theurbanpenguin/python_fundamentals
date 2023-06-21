@@ -1,10 +1,9 @@
 import argparse
-from mymodule import f_to_c
-from mymodule import c_to_f
+import mymodule
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--fahr', help='Enter Fahrenheit value', type=int)
-parser.add_argument('-c', '--cent', help='Enter centigrade value', type=int)
+parser.add_argument('-c', '--cent', help='Enter Centigrade value', type=int)
 args = parser.parse_args()
 
 if args.fahr:

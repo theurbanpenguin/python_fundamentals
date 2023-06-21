@@ -1,11 +1,11 @@
-from sys import argv
-from mymodule import basename
+import sys
+import mymodule
 
-script_name = basename(argv[0])
+script_name = basename(sys.argv[0])
 names = []
 
 try:
-    argv[1].isalnum()
+    sys.argv[1].isalnum()
     for n in sys.argv[1:]:
         names.append(n)
 except IndexError:
