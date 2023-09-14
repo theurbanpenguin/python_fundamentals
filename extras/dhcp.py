@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# sudo apt install -y python3-venv
+# cd venv ; python3 -m venv dhcp
+# pip3 install scapy
 from scapy.all import *
 
 conf.checkIPaddr = False  # Disabling the IP address checking
