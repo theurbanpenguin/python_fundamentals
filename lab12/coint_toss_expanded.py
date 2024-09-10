@@ -1,3 +1,4 @@
+from colors import Colors
 # A simple heads or tails game emulating a coin toss
 # First we create a set. This is a special list that is unordered
 # This means the ordering of the set elements in not fixed
@@ -26,6 +27,6 @@ green = '\033[32m'
 reset = '\033[0m'
 
 if result == user:
-    print(f'{green}You win, it was {result}{reset}')
+    print(f'{Colors.GREEN}You win, it was {result}{Colors.RESET}')
 else:
-    print(f'{red}You lose, it was {result}{reset}')
+    print(f'{Colors.RED}You lose, it was {result}{Colors.RESET}')

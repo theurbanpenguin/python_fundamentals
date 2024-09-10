@@ -1,5 +1,5 @@
 import argparse
-import momodule
+import mymodule
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--fahr', help='Enter Fahrenheit value', type=int)
